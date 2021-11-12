@@ -1,0 +1,58 @@
+body {
+  background: linear-gradient(to left,rgb(138, 52, 52),rgb(97, 97, 199));
+}
+
+.main {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+button {
+  background: none;
+  border: 1px solid black;
+  font-size: 20px;
+  border-radius:5px;
+}
+
+
+#spin, #reset {
+  bottom: 20vh;
+  right: 45vw;
+}
+
+#spin:hover {
+  color: rgb(0, 180, 120);
+  border-color: rgb(0, 180, 120);
+}
+
+#spin:focus, #reset:focus {
+  outline:none;
+}
+
+#reset:hover {
+  color: red;
+  border-color: red;
+}
+
+
+
+#readout {
+  bottom: 7vh;
+  left: 35vw;
+}
+
+
+#result{
+  font-size:50px;
+  color: rgb(0, 180, 120);
+}
+
+input {
+  font-size: 16px;
+  border:none;
+  border-bottom: 1px solid black
+}
