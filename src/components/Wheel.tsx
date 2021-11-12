@@ -4,7 +4,7 @@ import "./wheel.css";
 
 class Wheel extends React.Component {
   state = {
-    list: [
+    newList: [
       "$100",
       "$500",
       "$9,999",
@@ -14,6 +14,18 @@ class Wheel extends React.Component {
       "$4.44",
       "$0",
       "$333"
+    ],
+    list: [
+        "Hot Dog",
+        "Not Hot Dog",
+        "Not Hot Dog",
+        "Not Hot Dog",
+        "Not Hot Dog",
+        "Not Hot Dog",
+        "Not Hot Dog",
+        "Not Hot Dog",
+        "Not Hot Dog",
+        "Not Hot Dog"
     ],
     // list: ["$100", "$500", "$9,999", "$1", "$60", "$1,000", "$4.44"],
     // list: ["$100","$500","$9,999","$1","$60"],
@@ -109,7 +121,7 @@ class Wheel extends React.Component {
       baseSize + Math.sin(angle - arc / 2) * textRadius
     );
     ctx.rotate(angle - arc / 2 + Math.PI / 2);
-    ctx.fillText(text, -ctx.measureText(text).width / 2, 0);
+    ctx.fillText(text, -ctx.measureText(text).width / 4, 0, 50);
     ctx.restore();
   }
 
